@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.logo img {
+  max-width: 50%;
+  height: auto;
+}
+
+.navmenu {
+  display: flex;
+}
+
+.navmenu a {
+  text-decoration: none !important;
+  color: #2c2c2c;
+  font-size: 25px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+}
+
+.navmenu a:hover {
+  color: #ffc0b8;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon i {
+  margin-right: 20px;
+  color: #2c2c2c;
+  font-size: 25px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+}
+
+.nav-icon i:hover {
+  transform: scale(1.1);
+  color: #ffc0b8;
+}
+
+.menu-icon {
+  font-size: 35px;
+  color: #2c2c2c;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.menu-icon i:hover {
+  transform: scale(1.1);
+  color: #ffc0b8;
+}
+
+.bx-menu {
+  font-size: 35px;
+  color: #2c2c2c;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.main-home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/banner1.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.main-text h5 {
+  color: brown;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 40px;
+}
+
+.main-text h1 {
+  color: black;
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 6px 0 10px;
+}
+
+.main-text h1 span {
+  color: #fff;
+}
+
+.main-text p {
+  color: #DE3163;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.main-btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 2px solid #fff;
+  padding: 12px 25px;
+  transition: all 0.42s ease;
+}
+
+.main-btn:hover {
+  background-color: #ffc0b8;
+  color: black;
+}
+
+.down-arrow {
+  position: absolute;
+  top: 85%;
+  right: 11%;
+}
+
+.down i {
+  font-size: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 12px 12px;
+}
+
+.down i:hover {
+  background-color: #ffc0b8;
+  color: black;
+  transition: all 0.42s ease;
+}
+
+header.sticky {
+  background: white;
+  padding: 20px 10%;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.container-search {
+  display: flex;
+  align-items: center;
+}
+
+.container-search form {
+  display: flex;
+  align-items: center;
+}
+
+.container-search select, 
+.container-search input {
+  margin-right: 10px; /* ระยะห่างระหว่างช่องค้นหากับปุ่ม */
+}
+
+.container-search button {
+  margin-right: 20px; /* ระยะห่างจากขอบขวาของ container */
+  padding: 5px 15px;
+  background-color: #f6aa38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-search button:hover {
+  background-color: #ffc0b8;
+}
+
+
+
+
+/* style section css */
+section {
+  padding: 100px 200px;
+}
+
+.sample-style {
+  background: #FFDB58;
+
+}
+
+.clothes-list {
+  background: #ffa25a;
+}
+
+.accessories-list {
+  background-color: #ffaf89;
+}
+
+.center-text1 h2 {
+  color: black;
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.center-text1 span {
+  color: #fff;
+}
+
+.center-text2 h2 {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.center-text2 span {
+  color: #fff;
+}
+
+.center-text3 h2 {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.center-text3 span {
+  color: #fff;
+}
+
+/* slide */
+.img-slider {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #f6aa38;
+}
+
+.img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
+}
+
+.img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.img-slider .slide .slide-info {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+.img-slider .slide .slide-info h2 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.img-slider .slide .slide-info span {
+  color: #FFDB58;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.img-slider .slide .slide-info p {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.img-slider .navigation-slide {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation-slide .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+  margin: 20px;
+}
+
+.img-slider .navigation-slide .btn.active {
+  background: #FFDB58;
+}
+
+.img-slider .navigation-slide .btn:hover {
+  transform: scale(1.2);
+}
+
+/* card */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.container .title {
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.container .products-container .product {
+  position: relative;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+
+.container .products-container .product:hover {
+  outline: 0.2rem solid #222;
+  outline-offset: 0;
+}
+
+.container .products-container .product img {
+  max-height: 25rem;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.container .products-container .product:hover img {
+  transform: scale(0.9);
+  transform: scale(0.9) rotate(-3deg);
+}
+
+.container .products-container .product h3 {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.container .products-container .product:hover h3 {
+  color: #ffc0b8;
+}
+
+.products-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  z-index: 1000;
+}
+
+.products-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+  width: 90%; /* ให้การ์ดมีขนาด 90% ของความกว้างหน้าจอ */
+  max-width: 40rem; /* ยังคงให้การ์ดมีขนาดไม่เกิน 40rem */
+  max-height: 90vh; /* จำกัดความสูงไม่เกิน 90% ของความสูงหน้าจอ */
+  overflow-y: auto; /* เพิ่ม scroll bar ถ้าเนื้อหามีมากเกินไป */
+  box-sizing: border-box; /* ป้องกันไม่ให้ padding ทำให้ขนาดเกิน */
+  
+}
+
+
+.products-preview .preview.active {
+  display: inline-block;
+}
+
+.products-preview .preview img {
+  max-height: 20rem;
+}
+
+.products-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.products-preview .preview .fa-times:hover {
+  transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+  color: #444;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.products-preview .preview p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.description-box {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  background-color: #f9f9f9; /* ใส่พื้นหลังเพื่อเน้น */
+  max-height: 200px; 
+  overflow-y: auto; /* เพิ่ม scroll bar ถ้าเนื้อหายาวเกินไป */
+  margin-top: 1rem; 
+}
+
+
+/* Responsive header */
+@media (max-width: 890px) {
+  header {
+    padding: 20px 3%;
+    transition: padding 0.4s;
+  }
+}
+
+/* Main text and button adjustments */
+@media (max-width: 630px) {
+  .main-text h1 {
+    font-size: 48px;
+    transition: font-size 0.4s;
+  }
+  .main-text p {
+    font-size: 16px;
+    transition: font-size 0.4s;
+  }
+  .main-btn {
+    padding: 12px 24px;
+    transition: padding 0.4s;
+  }
+}
+
+/* Navigation menu adjustments */
+@media (max-width: 750px) {
+  .navmenu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #edfff1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    transition: right 0.4s;
+  }
+  .navmenu a {
+    margin: 16px 0;
+  }
+  .navmenu.open {
+    right: 0;
+  }
+}
+
+/* Responsive slide */
+@media (max-width: 1024px) {
+  .img-slider {
+    width: 100%;
+    height: 340px;
+  }
+
+  .img-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* แสดงผลภาพแบบครอบเต็มพื้นที่ */
+  }
+
+  .img-slider .slide .slide-info h2,
+  .img-slider .slide .slide-info span {
+    font-size: 34px;
+  }
+
+  .img-slider .slide .slide-info p {
+    font-size: 22px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-slider {
+    height: 300px;
+  }
+
+  .img-slider .slide img {
+    object-fit: cover;
+  }
+
+  .img-slider .slide .slide-info h2,
+  .img-slider .slide .slide-info span {
+    font-size: 28px;
+  }
+
+  .img-slider .slide .slide-info p {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .img-slider .navigation-slide .btn {
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-slider {
+    height: 240px;
+  }
+
+  .img-slider .slide img {
+    object-fit: cover;
+  }
+
+  .img-slider .slide .slide-info h2,
+  .img-slider .slide .slide-info span {
+    font-size: 20px;
+  }
+
+  .img-slider .slide .slide-info p {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .img-slider .navigation-slide .btn {
+    width: 8px;
+    height: 8px;
+    margin: 8px;
+  }
+}
